@@ -60,7 +60,7 @@ export default function LoginPage({handler}){
       </Header>
       <Form size='large' onSubmit={handleSubmit}>
         <Segment stacked>
-          <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' name="email" value={state.email} />
+          <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' name="email" value={state.email} onChange={handleChange}/>
           <Form.Input
             fluid
             icon='lock'
@@ -68,6 +68,7 @@ export default function LoginPage({handler}){
             name = 'password'
             placeholder='Password'
             type='password'
+            onChange={handleChange}
             value = {state.password}
           />
 
