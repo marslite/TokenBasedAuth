@@ -56,9 +56,6 @@ export default function SignupPage({handler}){
     }
 
 
-
-
-
     return(
         <Grid textAlign="center" style={{ height: "100vh" }} verticalAlign="middle">
 			 <Grid.Column style={{ maxWidth: 450 }}>
